@@ -40,7 +40,7 @@ export default {
 
 <style>
 .block {
-  width: 400px;
+  width: 300px;
   border-radius: 20px;
   background: green;
   color: white;
