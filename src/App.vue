@@ -1,5 +1,6 @@
 <template>
   <h1>Moses Reaction Timer</h1>
+  <P>Instruction: <br> Click On PLay to start game, as soon as a new box appear, <br> click it and a result of how fast you will be revealed.</P>
   <button class="btn" @click="start"  :disabled="isPlaying" >Play</button>
 
   <FirstBlock v-if="isPlaying" :delay="delay" @end="endGame" />
@@ -26,7 +27,7 @@
 
       methods:{
         start(){
-            this.delay = 2000 + Math.random() * 5000
+            this.delay = 1000 + Math.random() * 4000
             this.isPlaying = true 
             this.showResults = false
            // console.log(this.delay)
@@ -56,6 +57,7 @@
   /* background: green; */
   color: red;
   border-radius: 10px;
+  margin: 30px 0px;
   outline: none;
   border: none;
   width: 40%;
